@@ -1,9 +1,17 @@
 {
-    "$id": "http://johannesloher.com/schemas/vibe-json-logger/log-message.schema.json",
+    "$id": "http://johannesloher.com/schemas/vibe-json-log/log-message.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A representation of a log message as produced by the JSONLogger of the vibe-json-log package",
     "type": "object",
-    "required": [],
+    "required": [
+        "timestamp",
+        "threadID",
+        "taskID",
+        "level",
+        "file",
+        "line",
+        "message"
+    ],
     "properties": {
         "timestamp": {
             "type": "string",
