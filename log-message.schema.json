@@ -1,0 +1,53 @@
+{
+    "$id": "http://johannesloher.com/schemas/vibe-json-logger/log-message.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A representation of a log message as produced by JSONLogger of the vibe-json-logger package",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the message was logged"
+        },
+        "threadName": {
+            "type": "string",
+            "description": "Name of the thread that logged the message"
+        },
+        "threadID": {
+            "type": "string",
+            "description": "ID of the thread that logged the message"
+        },
+        "taskID": {
+            "type": "string",
+            "description": "ID of the vibe-core task that logged the message"
+        },
+        "level": {
+            "type": "string",
+            "enum": [
+                "TRACE",
+                "DEBUG_VERBOSE",
+                "DEBUG",
+                "DIAGNOSTIC",
+                "INFO",
+                "WARN",
+                "ERROR",
+                "CRITICAL",
+                "FATAL"
+            ],
+            "description": "Level at which the message was logged"
+        },
+        "file": {
+            "type": "string",
+            "description": "Source file which contains the line which logged the message"
+        },
+        "line": {
+            "type": "integer",
+            "description": "Number of the line which logged the message"
+        },
+        "message": {
+            "type": "string",
+            "description": "Actual log message"
+        }
+    }
+}

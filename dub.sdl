@@ -1,0 +1,7 @@
+name "vibe-json-log"
+description "A JSON based logger for vibe-core."
+authors "Johannes Loher"
+copyright "Copyright © 2019, Johannes Loher"
+license "MIT"
+dependency "vibe-core" version="~>1.6.2"
+targetType "library"

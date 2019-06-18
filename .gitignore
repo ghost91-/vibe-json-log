@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/libvibe-json-log
+libvibe-json-log.so
+libvibe-json-log.dylib
+libvibe-json-log.dll
+libvibe-json-log.a
+libvibe-json-log.lib
+libvibe-json-log-test-*
+*.exe
+*.o
+*.obj
+*.lst
