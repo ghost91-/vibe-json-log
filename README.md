@@ -1,11 +1,11 @@
 # vibe-json-log
 
-A JSON based logger for [vibe-core].
+A JSON based logger for [vibe-core](https://github.com/vibe-d/vibe-core).
 
 ## Usage
 
-To use the logger in your [vibe-core] based project, simply register it as a
-logger:
+To use the logger in your [vibe-core](https://github.com/vibe-d/vibe-core) based
+project, simply register it as a logger:
 
 ```D
 import vibe.core.log : registerLogger;
@@ -30,8 +30,9 @@ new JSONLogger("path/to/logFile.log");
 
 ## Format
 
-The format of the log messages is described in [log-message.schema.json]. Here
-is an example of how a log message could look like:
+The format of the log messages is described in
+[log-message.schema.json](log-message.schema.json). Here is an example of how a
+log message could look like:
 
 ```json
 {
@@ -49,8 +50,5 @@ is an example of how a log message could look like:
 ## Acknowledgement
 
 This project is heavily based on the `FileLoger` which is distributed as part of
-[vibe-core]. You can find the corresponding license [here][vibe-core-license].
-
-[vibe-core]: https://github.com/vibe-d/vibe-core
-[log-message.schema.json]: log-message.schema.json
-[vibe-core-license]: https://github.com/vibe-d/vibe-core/blob/master/LICENSE.txt
+[vibe-core](https://github.com/vibe-d/vibe-core). You can find the corresponding
+license [here](https://github.com/vibe-d/vibe-core/blob/master/LICENSE.txt).
