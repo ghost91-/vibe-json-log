@@ -9,7 +9,7 @@ logger:
 
 ```D
 import vibe.core.log : registerLogger;
-import vibe-json-logger.logger : JSONLogger;
+import vibe_json_log.log : JSONLogger;
 
 registerLogger(cast(shared) new JSONLogger());
 ```
@@ -19,8 +19,8 @@ The no argument constructor creates a `JSONLogger` that logs to `stdout` and
 other overloads:
 
 ```D
-import vibe-json-logger.logger : JSONLogger;
 import std.stdio : File;
+import vibe_json_log.log : JSONLogger;
 
 new JSONLogger(File("path/to/infoFile.log", "ab"), File("path/to/errorFile.log", "ab"));
 
