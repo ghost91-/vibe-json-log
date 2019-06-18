@@ -1,7 +1,7 @@
 {
     "$id": "http://johannesloher.com/schemas/vibe-json-logger/log-message.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A representation of a log message as produced by JSONLogger of the vibe-json-logger package",
+    "description": "A representation of a log message as produced by the JSONLogger of the vibe-json-log package",
     "type": "object",
     "required": [],
     "properties": {
